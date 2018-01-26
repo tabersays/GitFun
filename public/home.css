@@ -27,4 +27,12 @@
     grid-area: content;
     background-color: whitesmoke;
 
-} 
+}
+
+.pink {
+    background-color: lightpink;
+}
+
+.blue {
+    background-color: lightblue;
+}
