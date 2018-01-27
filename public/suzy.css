@@ -1,1 +1,95 @@
+.s-container{
+    background-color: #666;
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    font-family: 'Dosis', sans-serif;
+    line-height: 1.5em;
+}
 
+
+/* back button */
+.back-button {
+    background-color: hotpink;
+    border: none;
+    border-radius: 100px;
+    color: #fff;
+    padding: 20px;
+    width: 75px;
+    height: 75px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 30px;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    float: left;
+    box-shadow: 0 6px 8px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    position: absolute;
+
+}
+
+.back-button:hover {
+}
+
+  
+.back-button:focus {
+    outline-style:none;
+    border-color:transparent;
+}
+
+.back-button:active {
+    box-shadow: 0 3px 4px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    transform: translateY(2px);
+}
+
+/* neon */
+.neon-container{
+    padding-top: 100px;
+    text-align: center;
+	height: 100%;
+	width: 100%;
+	display: table;
+}
+neon {
+    display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+
+i {
+  font: lighter 200px/ 100px 'Dosis', sans-serif;
+	color: #EEDDE0;
+	text-shadow: 0 0 30px hotpink, 
+		0 0 10px rgba(230, 161, 173, 0.41), 
+		0 0 100px #E6A1AD, 
+		0 0 500px #F36780, 
+		5px 9px 5px rgba(0, 0, 0, 0.5);
+}
+
+i.off {
+	color: rgba(46, 46, 46, 0.61);
+	text-shadow: 7px 7px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+
+.s-content {
+ margin: 0 200px;
+}
+
+.gifz {
+    max-height: 300px; 
+}
+
+.padding-top{
+    padding-top: 50px;
+}
+
+.footer-text {
+    padding-top: 50px;
+    opacity: .5;
+    font-size: 14px;
+    text-align: center;
+}
