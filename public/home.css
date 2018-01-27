@@ -13,7 +13,7 @@
 
 .header {
     grid-area: header;
-    background-color: #333333;
+    background-color: #666;
     padding: 10px;
 }
 
@@ -25,6 +25,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     float: left;
+    text-shadow: 0 6px 8px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 .color-button {
     background-color: hotpink;
@@ -52,7 +53,7 @@
   }
   
   .color-button span:after {
-    content: '\2665';
+    content: '\2193';
     position: absolute;
     opacity: 0;
     top: 0;
@@ -83,14 +84,14 @@
     color: #fff;
     text-align: center;
     grid-area: nav;
-    background-color: #333;
+    background-color: #666
 }
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     /* width: 200px; */
-    background-color: #333;
+    background-color: #666;
 }
 
 li a {
