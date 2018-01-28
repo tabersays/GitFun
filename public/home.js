@@ -59,15 +59,31 @@ console.log(`I like ${Taber.skills.join()}`);
  * Inaction being used with html
  */
 
-let currentColor;
+let currentColor = 'white';
 function toggleColors() {
-	if (currentColor === 'pink') {
-		currentColor = 'blue';
-		const element = document.getElementsByClassName('content')[0];
-		element.className = 'content blue';
-	} else {
+	if (currentColor === 'white') {
 		currentColor = 'pink';
 		const element = document.getElementsByClassName('content')[0];
 		element.className = 'content pink';
+	} else if (currentColor === 'pink'){
+		currentColor = 'blue';
+		const element = document.getElementsByClassName('content')[0];
+		element.className = 'content blue';
+	} else if (currentColor === 'blue'){
+		currentColor = 'purple';
+		const element = document.getElementsByClassName('content')[0];
+		element.className = 'content purple';
+	} else if (currentColor === 'purple'){
+		currentColor = 'yellow';
+		const element = document.getElementsByClassName('content')[0];
+		element.className = 'content yellow';
+	} else if (currentColor === 'yellow'){
+		currentColor = 'green';
+		const element = document.getElementsByClassName('content')[0];
+		element.className = 'content green';
+	}else if (currentColor === 'green'){
+		currentColor = 'white';
+		const element = document.getElementsByClassName('content')[0];
+		element.className = 'content white';
 	}
 }

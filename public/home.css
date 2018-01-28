@@ -39,7 +39,7 @@
     font-size: 16px;
     margin: 30px;
     cursor: pointer;
-    transition-duration: 0.2s;
+    transition-duration: 0.1s;
     float: left;
     box-shadow: 0 6px 8px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 
@@ -109,13 +109,27 @@ li a:hover {
 .content {
     text-align: center;
     grid-area: content;
-    background-color: whitesmoke;
 }
 
+.white {
+    background-color: whitesmoke;
+}
 .pink {
     background-color: lightpink;
 }
 
 .blue {
     background-color: lightblue;
+}
+
+.purple {
+    background-color: rgb(197, 194, 247);
+}
+
+.yellow {
+    background-color: #F5F1C8;
+}
+
+.green {
+    background-color: rgb(171, 233, 171)
 }
