@@ -16,3 +16,8 @@ function openPage(evt, pageName) {
     document.getElementById(pageName).style.display = "block";
     evt.currentTarget.className += " active";
 }
+
+function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+}
