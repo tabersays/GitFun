@@ -18,6 +18,7 @@ body {
 
 .meat {
     padding-bottom: 61px;
+    margin: 0 auto;
 }
 /* back button */
 .back-button {
@@ -77,9 +78,14 @@ body {
     text-shadow: 0 6px 8px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
+.tab {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center
+}
+
 .tab ul, .tab ul li {
     list-style: none;
-    margin: 0 auto;
     overflow: hidden;
 }
 
@@ -105,7 +111,7 @@ body {
     padding: 20px;
     transition: back-ground-color 1s, transform .1s;
     font-size: 17px;
-    float: left;
+    /* float: left; */
     border: none;
     box-shadow:0px 1px 0 rgba(76, 45, 82, 0.5),
                0px 2px 0 rgba(76, 45, 82, 0.5),
@@ -141,7 +147,8 @@ body {
     text-align: center;
 	height: 100%;
 	width: 100%;
-	display: table;
+  display: table;
+  margin: 0 auto;
 }
 neon {
     display: table-cell;
@@ -164,12 +171,6 @@ i.off {
 	text-shadow: 7px 7px 5px rgba(0, 0, 0, 0.5);
 }
 
-
-
-.s-content {
- margin: 0 200px;
-}
-
 .gifz {
     max-height: 300px; 
 }
@@ -179,7 +180,7 @@ i.off {
 }
 .footer{
     position: absolute;
-    bottom: 0;
+    /* bottom: 0; */
     width: 100%;
     height: 60px;
 }
@@ -192,6 +193,7 @@ i.off {
 }
 
 .popup {
+  padding-left: 200px;
     position: relative;
     display: inline-block;
     cursor: pointer;
@@ -199,6 +201,7 @@ i.off {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    text-align: center;
 }
 
 .popup .popuptext {
@@ -211,9 +214,8 @@ i.off {
     position: absolute;
     z-index: 1;
     bottom: 80%;
-    left: 50%;
-    margin-left: -20px;
-}
+    left: 80%;
+  }
 
 .popup .popuptext::after {
     content: "";
@@ -221,7 +223,7 @@ i.off {
     top: 100%;
     border-width: 5px;
     border-style: solid;
-    border-color: #555 transparent transparent transparent;
+    border-color: #333 transparent transparent transparent;
 }
 
 .popup .show {
@@ -232,11 +234,10 @@ i.off {
 /* this is awful, don't look */
   
   #ui {
-    position: absolute;
     width: 100%;
-    height: 500px;
-    padding: 200px 0;
-   margin: 100px;
+    height: 200px;
+    padding: 100px 0;
+   margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
