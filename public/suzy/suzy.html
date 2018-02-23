@@ -13,33 +13,37 @@
 <body class="s-container">
 
     <a class="back-button" onclick="goBack()">&#8617;</a>
-    
+   
 	<div class="header">
-		<h1 class="bigboy"><a href="suzy.html">bink bink</a></h1>
-    </div>
-    
+      <div class="tab">
+          <button class="tablinks" onclick="openPage(event, 'ohHi')">oh hi</button>
+          <button class="tablinks" onclick="openPage(event, 'page2')">stars</button>
+          <button class="tablinks" onclick="openPage(event, 'page3')">nothing</button>
+      </div>
+  </div>
+
     <div class="meat">
 
-        <div class="tab">
-            <button class="tablinks" onclick="openPage(event, 'ohHi')">oh hi</button>
-            <button class="tablinks" onclick="openPage(event, 'page2')">stars</button>
-            <button class="tablinks" onclick="openPage(event, 'page3')">nothing</button>
-        </div>
-        
+      
+
         <div id="ohHi" class="tabcontent">
-            <div class="s-content">
-                <div class="neon-container">  
-                        <div class="neon">hello world</div>
-                        <img class="gifz padding-top" src="https://78.media.tumblr.com/6f520f553e75446bf46a1e027d4da51c/tumblr_ocpc4gG4jU1ud2xixo1_500.gif">
-                </div>   
-            </div>
+          <div class="neon-container">  
+            <div class="neon">hello world</div>
+            <img class="gifz padding-top padding-bottom" src="https://78.media.tumblr.com/6f520f553e75446bf46a1e027d4da51c/tumblr_ocpc4gG4jU1ud2xixo1_500.gif">
+         <div>
+            <button class="alert-button" onclick="howOld()">Click here for alerts!</button>
+         </div>
+            
+          <p class="footer-text">© Suzy Tolen 2018</p>
+            
+          </div>   
         </div>
         
         <div id="page2" class="tabcontent">
             <div id="ui">
                     <div class="popup" onclick="myFunction()"><h1 class="bigboy">⭐</h1>
                             <span class="popuptext" id="myPopup">hi</span>
-                        </div>
+                    </div>
                     <div class="ball">
                       <div class="ball_inner"></div>
                     </div>
@@ -253,23 +257,24 @@
                     <div class="ball">
                       <div class="ball_inner"></div>
                     </div>
-                
-                  </div>
+                    
+              </div>
+              
         </div>
         
         <div id="page3" class="tabcontent">
 
         </div>
+      
+        
 
     </div>
       
 
-    <div class="footer">
-            <p class="footer-text">© Suzy Tolen 2018</p>
-    </div>
 
 
-    <script src="suzy.js"></script>
+
     <script src="neon.js"></script>
+    <script src="suzy.js"></script>
 </body>
 </html>

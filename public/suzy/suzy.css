@@ -6,6 +6,9 @@ body {
 }
 
 
+  ::-webkit-scrollbar {
+    width: 0;
+}
 
 .s-container{
     background-color: #666;
@@ -18,6 +21,7 @@ body {
 
 .meat {
     padding-bottom: 61px;
+    margin: 0 auto;
 }
 /* back button */
 .back-button {
@@ -63,7 +67,7 @@ body {
 
 .header {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    padding: 10px 50px;
+
     text-align: center;
 }
 
@@ -77,9 +81,51 @@ body {
     text-shadow: 0 6px 8px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
+.alert-button {
+  font-size: 14px;
+  color: #fff;
+  background-color: hotpink;
+  border: 0;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 30px;
+  transition: back-ground-color 1s, transform .1s;
+  box-shadow:0px 1px 0 rgba(76, 45, 82, 0.5),
+               0px 2px 0 rgba(76, 45, 82, 0.5),
+               1px 3px 0 rgba(76, 45, 82, 0.5),
+               2px 4px 0 rgba(76, 45, 82, 0.5),
+               3px 5px 0 rgba(76, 45, 82, 0.5),
+               4px 6px 0 rgba(76, 45, 82, 0.5);
+}
+.alert-button:hover {
+  background-color: rgb(230, 154, 92);
+}
+
+.alert-button:focus {
+  outline-style:none;
+  border-color:transparent;
+}
+
+.alert-button:active {
+  background-color: rgb(167, 83, 216);
+  color: #333;
+  box-shadow:
+  0px 0px 0 #333,
+  0px 1px 0 #333,
+  1px 2px 0 #333;
+
+  transform: translate(3px, 2px);
+}
+
+
+.tab {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center
+}
+
 .tab ul, .tab ul li {
     list-style: none;
-    margin: 0 auto;
     overflow: hidden;
 }
 
@@ -105,7 +151,7 @@ body {
     padding: 20px;
     transition: back-ground-color 1s, transform .1s;
     font-size: 17px;
-    float: left;
+    /* float: left; */
     border: none;
     box-shadow:0px 1px 0 rgba(76, 45, 82, 0.5),
                0px 2px 0 rgba(76, 45, 82, 0.5),
@@ -137,11 +183,12 @@ body {
 
 /* neon */
 .neon-container{
-    padding-top: 100px;
+    padding-top: 80px;
     text-align: center;
 	height: 100%;
 	width: 100%;
-	display: table;
+  display: table;
+  margin: 0 auto;
 }
 neon {
     display: table-cell;
@@ -164,22 +211,21 @@ i.off {
 	text-shadow: 7px 7px 5px rgba(0, 0, 0, 0.5);
 }
 
-
-
-.s-content {
- margin: 0 200px;
-}
-
 .gifz {
-    max-height: 300px; 
+    max-height: 250px; 
 }
 
 .padding-top{
     padding-top: 50px;
 }
+
+.padding-bottom {
+  padding-bottom: 25px;
+}
+
 .footer{
     position: absolute;
-    bottom: 0;
+    /* bottom: 0; */
     width: 100%;
     height: 60px;
 }
@@ -192,6 +238,7 @@ i.off {
 }
 
 .popup {
+  padding-left: 200px;
     position: relative;
     display: inline-block;
     cursor: pointer;
@@ -199,6 +246,7 @@ i.off {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    text-align: center;
 }
 
 .popup .popuptext {
@@ -211,9 +259,8 @@ i.off {
     position: absolute;
     z-index: 1;
     bottom: 80%;
-    left: 50%;
-    margin-left: -20px;
-}
+    left: 80%;
+  }
 
 .popup .popuptext::after {
     content: "";
@@ -221,7 +268,7 @@ i.off {
     top: 100%;
     border-width: 5px;
     border-style: solid;
-    border-color: #555 transparent transparent transparent;
+    border-color: #333 transparent transparent transparent;
 }
 
 .popup .show {
@@ -232,11 +279,10 @@ i.off {
 /* this is awful, don't look */
   
   #ui {
-    position: absolute;
     width: 100%;
-    height: 500px;
-    padding: 200px 0;
-   margin: 100px;
+    height: 200px;
+    padding: 100px 0;
+   margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
